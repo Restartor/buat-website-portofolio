@@ -5,6 +5,14 @@
     text-decoration: none;
 }
 
-footer{
+*{
     text-align: center;
+}
+
+#bawah{
+    justify-content: end;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    text-align: center;
+
 }
