@@ -1,3 +1,9 @@
+body{
+    background-image: url(image.png);
+    background-position-x: right;
+}
+
+
 .btninfo{
     background-color: rgb(255, 73, 73);
     color: aliceblue;
@@ -6,7 +12,9 @@
 }
 
 *{
+    color: antiquewhite;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #bawah{
@@ -16,3 +24,11 @@
     text-align: center;
 
 }
+#tengah button{
+    background-color: black;
+}
+
+#tengah > div{
+    margin: 30px;
+}
+
