@@ -44,3 +44,45 @@ header nav a{
     margin: 0 15px;
     font-size: 18px;
 }
+section#about {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    /* kalau mau gambar dan teks memenuhi lebar */
+    justify-content: space-between;
+}
+
+#penjelasanabout {
+    flex: 1 1 60%;
+    color: azure;
+}
+
+#gambarabout {
+    flex: 0 0 auto;
+    /* pastikan gambar tetap di sebelah kanan */
+    display: flex;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#gambarabout img {
+    width: 200px; /* sesuai kebutuhan */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsif: stack vertikal di layar sempit */
+@media (max-width: 768px) {
+    section#about {
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+    }
+    #penjelasanabout { order: 1; }
+    #gambarabout { order: 2; margin-top: 16px; }
+}
+
