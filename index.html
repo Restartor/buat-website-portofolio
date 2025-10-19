@@ -3,44 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="denji.jpeg">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
 </head>
 <body>
     <header>
-                <h1>Welcome to my Portofolio</h1>
         <nav>
-            <a href="">about</a>
-            <a href="">project</a>
-            <a href="">contact</a>
+            <ul id="navigasi-kiri" style="list-style-type: none; display: flex; gap: 20px; font-family: 'Mulish', sans-serif;">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+            <ul id="navigasi-kanan" style="list-style-type: none; display: flex; gap: 20px; font-family: 'Mulish', sans-serif;
+            margin-right: auto;">
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="tengah">
-        <div>
-            <div><h1>Testing</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR624HU0eqxrxNFfyhsQe1gXnj7rmlH_UYwMQ&s" alt="gambar naruto">
+    <section id="about">
+        <div id="penjelasanabout">
+            <h1 style="font-family: 'Press Start 2P', cursive;color: azure;">Hello, i'm Rafi Andiansyah</h1>
+            <h2 style="font-family: 'Mulish', sans-serif; color: rgb(212, 68, 212);">Junior Level Programmer</h2>
+            <p style="color: azure;">I'm a junior level programmer,<br>
+            I have a strong learning mindset, <br>
+            communicate clearly, and enjoy breaking down complex problems.</p>
         </div>
-        <form action="Masukin nama">
-            <input type="text"><button>Enter</button>
-        </form>
-    </section>
-    <section id="penjelasan">
-        <div><p>Lorem ipsum dolor sit, amet consectetur 
-            adipisicing elit. Ab nesciunt ullam corporis 
-            accusantium dignissimos veniam, natus laboriosam 
-            repudiandae nobis earum.</p></div>
-            <div id="kotak"></div>
+        <div id="gambarabout">
+            <img src="denji.jpeg" alt="Rafi Andiansyah" style="width:200px; height:200px; border-radius: 50%;">
+        </div>
     </section>
 
-    <section id="bawah">    
-        <div><h1>DATTEBAYOO</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum?</p></div>
+    <section id="Skills">
+        <h2 style="font-family: 'Press Start 2P', cursive;color: azure;">My Skills</h2>
+        <div id="blokpemisah"></div>
+        <div id="gambarskills">
+            <img src="htmllogo.png" alt="html logo" style="width:100px; height:100px;padding-right: 25px;">
+            <img src="csslogo.png" alt="css logo" style="width:100px; height:100px; padding-right: 25px;">
+            <img src ="cplusplus.png" alt="c++ logo" style="width:100px; height:100px; padding-right: 25px;">
+        </div>
+        <div id="skill-list" style="color: azure;">
+            <div class="skills-item">
+                <h3 style="font-family: 'Mulish', sans-serif;">Programming Languages</h3>
+                <p>C++, JavaScript, Python, Java</p>
+            </div>
+            <div class="skills-item">
+                <h3 style="font-family: 'Mulish', sans-serif;">Web Development</h3>
+                <p>HTML, CSS, React</p>
+            </div>
+            <div class="skills-item">
+                <h3 style="font-family: 'Mulish', sans-serif;">Tools & Technologies</h3>
+                <p>Git, Github, Docker, AWS</p>
+            </div>
+        </div>
     </section>
 
+
+
+
+    
 </body>
 </html>
